@@ -10,7 +10,7 @@ Comparing accuracy and biases of DNA metabarcoding, hybridization capture, and m
 
 ## Repository Structure
 
-herbivore-diet-bioinformatics-pipeline/
+```herbivore-diet-bioinformatics-pipeline/
 ├── README.md                 # This file
 ├── LICENSE                   # GNU General Public License v3.0
   └── scripts/                  # Analysis scripts
