@@ -13,7 +13,7 @@ Comparing accuracy and biases of DNA metabarcoding, hybridization capture, and m
 herbivore-diet-bioinformatics-pipeline/
 ├── README.md                 # This file
 ├── LICENSE                   # GNU General Public License v3.0
-└── scripts/                  # Analysis scripts
+  └── scripts/                  # Analysis scripts
     ├── 01_trim_and_clean.sh  # fastp: Adapter/quality trimming
     ├── 02_qc_fastqc.sh       # FastQC: Quality assessment
     ├── 03_kraken2_build_reference_db.sh  # Kraken2: Full reference database
