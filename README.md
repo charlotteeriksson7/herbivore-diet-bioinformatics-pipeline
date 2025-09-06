@@ -25,7 +25,7 @@ Comparing accuracy and biases of DNA metabarcoding, hybridization capture, and m
     ├── 09_samtools_pipeline.sh  # Samtools: Filtering mapped reads
     ├── 09b_samtools_dedup_pipeline.sh  # Samtools: Filtering with deduplication
     └── 10_genome_coverage_analysis.sh  # BEDTools: Genome coverage calculations
-
+```
 ## Pipeline Summary
 
 ### 1. **Trimming and Cleaning**
