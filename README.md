@@ -82,7 +82,7 @@ Comparing accuracy and biases of DNA metabarcoding, hybridization capture, and m
 
 Install using conda:
 
-bash
+```bash
 conda create -n diet-pipeline fastp fastqc kraken2 bracken minimap2 samtools bedtools -c bioconda
 
 ## Input Data Notes
