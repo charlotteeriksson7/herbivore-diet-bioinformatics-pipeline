@@ -28,23 +28,23 @@ Comparing accuracy and biases of DNA metabarcoding, hybridization capture, and m
 
 ## Pipeline Summary
 
-### 1. **Trimming and Cleaning**
+### 1. Trimming and Cleaning
 - **Tool**: `fastp`
 - **Script**: `01_trim_and_clean.sh`
 - **Purpose**: Trim adapters, remove low-quality reads (Phred < 30), and filter reads < 50 bp.
 
-### 2. **Quality Control**
+### 2. Quality Control
 - **Tool**: `FastQC`
 - **Script**: `02_fastqc.sh`
 - **Purpose**: Generate per-sample quality reports post-trimming.
 
-### 3. **Taxonomic Classification (Full Database)**
+### 3. Taxonomic Classification (Full Database)
 - **Tool**: `Kraken2`
 - **Scripts**:
   - `03_kraken2_build_reference_db.sh`: Builds custom database with RefSeq, nt, UniVec, and deer genomes.
   - `04_kraken2_classify.sh`: Classifies reads using the full database (`--paired` mode).
 
-### 4. **Chloroplast Classification**
+### 4. Chloroplast Classification
 - **Tool**: `Kraken2`
 - **Scripts**:
   - `05_kraken2_build_chloroplast_db.sh`: Builds database with chloroplast genomes of 24 plant species.
@@ -52,26 +52,26 @@ Comparing accuracy and biases of DNA metabarcoding, hybridization capture, and m
     - `0.5` for metagenomic samples
     - `0.05` for hybrid capture samples
 
-### 5. **Abundance Estimation**
+### 5. Abundance Estimation
 - **Tool**: `Bracken`
 - **Script**: `07_bracken_abundance.sh`: Estimates relative abundance
 - **Filters**:
   - Discards taxa <0.1% of total reads (metagenomic)
   - Discards taxa <1% of total reads (hybrid capture)
 
-### 6. **Read Mapping**
+### 6. Read Mapping
 - **Tool**: `Minimap2`
 - **Script**: `08_minimap2_mapping.sh`
 - **Purpose**: Aligns reads to full chloroplast genomes.
 
-### 7. **Read Filtering**
+### 7. Read Filtering
 - **Tool**: `Samtools`
 - **Scripts**:
   - `09_samtools_pipeline.sh`: Filters out unmapped, secondary, and supplementary reads (`-F 2308`)
   - `09b_samtools_dedup_pipeline.sh`: Also deduplicates reads (for hybrid capture)
 - **Additional Filters**: MAPQ ≥ 48 and properly paired reads (`-q 48 -f 0x2`)
 
-### 8. **Genome Coverage Calculation**
+### 8. Genome Coverage Calculation
 - **Tool**: `BEDTools`
 - **Script**: `10_genome_coverage_analysis.sh`
 - **Purpose**: Calculates per-base chloroplast genome coverage, normalized by genome length
