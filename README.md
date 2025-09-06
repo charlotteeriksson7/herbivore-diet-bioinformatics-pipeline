@@ -13,18 +13,18 @@ Comparing accuracy and biases of DNA metabarcoding, hybridization capture, and m
 ```herbivore-diet-bioinformatics-pipeline/
 ├── README.md # This file
 ├── LICENSE # GNU General Public License v3.0
-└── scripts/ # Analysis scripts
-  ├── 01_trim_and_clean.sh # fastp: Adapter/quality trimming
-  ├── 02_qc_fastqc.sh # FastQC: Quality assessment 
-  ├── 03_kraken2_build_reference_db.sh # Kraken2: Full reference database
-  ├── 04_kraken2_classify.sh # Kraken2: Taxonomic classification
-  ├── 05_kraken2_build_chloroplast_db.sh # Kraken2: Chloroplast database
-  ├── 06_kraken2_chl_classify.sh # Kraken2: Chloroplast classification
-  ├── 07_bracken_abundance.sh # Bracken: Relative abundance estimation
-  ├── 08_minimap2_mapping.sh # Minimap2: Chloroplast read mapping
-  ├── 09_samtools_pipeline.sh # Samtools: Filtering mapped reads
-  ├── 09b_samtools_dedup_pipeline.sh # Samtools: Filtering with deduplication
-  └── 10_genome_coverage_analysis.sh # BEDTools: Genome coverage calculations```
+  └── scripts/ # Analysis scripts
+    ├── 01_trim_and_clean.sh # fastp: Adapter/quality trimming
+    ├── 02_qc_fastqc.sh # FastQC: Quality assessment 
+    ├── 03_kraken2_build_reference_db.sh # Kraken2: Full reference database
+    ├── 04_kraken2_classify.sh # Kraken2: Taxonomic classification
+    ├── 05_kraken2_build_chloroplast_db.sh # Kraken2: Chloroplast database
+    ├── 06_kraken2_chl_classify.sh # Kraken2: Chloroplast classification
+    ├── 07_bracken_abundance.sh # Bracken: Relative abundance estimation
+    ├── 08_minimap2_mapping.sh # Minimap2: Chloroplast read mapping
+    ├── 09_samtools_pipeline.sh # Samtools: Filtering mapped reads
+    ├── 09b_samtools_dedup_pipeline.sh # Samtools: Filtering with deduplication
+    └── 10_genome_coverage_analysis.sh # BEDTools: Genome coverage calculations
 
 ## Pipeline Summary
 
