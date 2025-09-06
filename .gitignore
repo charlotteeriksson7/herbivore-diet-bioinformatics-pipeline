@@ -1,0 +1,66 @@
+# Temporary files
+*.tmp
+*.log
+*.out
+*.err
+*.bak
+*.swp
+*~
+
+# Conda environment files
+.env
+.conda
+conda-meta/
+
+# FASTQ, BAM, and other large raw or intermediate files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sam
+*.bam
+*.bai
+*.vcf
+*.vcf.gz
+
+# BEDTools and coverage output
+*.bed
+*.cov
+*.genomecov
+*.depth
+
+# Kraken2 and Bracken database folders
+kraken2_db/
+bracken_db/
+
+# Reference genomes and index files
+*.fasta
+*.fa
+*.fna
+*.fasta.*
+*.fa.*
+*.mmi
+*.bt2
+*.bt2l
+*.idx
+*.dict
+*.gff
+*.gtf
+
+# Output and intermediate files
+*.tsv
+*.csv
+*.xlsx
+*.pdf
+*.html
+
+# Compressed files
+*.zip
+*.tar.gz
+*.tgz
+*.gz
+
+# System files
+.DS_Store
+Thumbs.db
+
