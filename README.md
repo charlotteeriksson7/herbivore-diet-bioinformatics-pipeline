@@ -10,7 +10,7 @@ Comparing accuracy and biases of DNA metabarcoding, hybridization capture, and m
 
 ## Repository Structure
 
-herbivore-diet-bioinformatics-pipeline/
+```herbivore-diet-bioinformatics-pipeline/
 ├── README.md # This file
 ├── LICENSE # GNU General Public License v3.0
 └── scripts/ # Analysis scripts
@@ -24,7 +24,7 @@ herbivore-diet-bioinformatics-pipeline/
   ├── 08_minimap2_mapping.sh # Minimap2: Chloroplast read mapping
   ├── 09_samtools_pipeline.sh # Samtools: Filtering mapped reads
   ├── 09b_samtools_dedup_pipeline.sh # Samtools: Filtering with deduplication
-  └── 10_genome_coverage_analysis.sh # BEDTools: Genome coverage calculations
+  └── 10_genome_coverage_analysis.sh # BEDTools: Genome coverage calculations```
 
 ## Pipeline Summary
 
