@@ -84,6 +84,7 @@ Install using conda:
 
 ```bash
 conda create -n diet-pipeline fastp fastqc kraken2 bracken minimap2 samtools bedtools -c bioconda
+```
 
 ## Input Data Notes
 
